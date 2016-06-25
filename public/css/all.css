@@ -1,0 +1,178 @@
+/*
+ * Globals
+ */
+
+/* Links */
+a,
+a:focus,
+a:hover {
+    color: #fff;
+}
+
+/* Custom default button */
+.btn-default,
+.btn-default:hover,
+.btn-default:focus {
+    color: #333;
+    text-shadow: none; /* Prevent inheritence from `body` */
+    background-color: #fff;
+    border: 1px solid #fff;
+}
+
+
+/*
+ * Base structure
+ */
+
+html,
+body {
+    height: 100%;
+    background-color: #333;
+}
+body {
+    color: #fff;
+    text-align: center;
+    text-shadow: 0 1px 3px rgba(0,0,0,.5);
+}
+
+/* Extra markup and styles for table-esque vertical and horizontal centering */
+.site-wrapper {
+    display: table;
+    width: 100%;
+    height: 100%; /* For at least Firefox */
+    min-height: 100%;
+    -webkit-box-shadow: inset 0 0 100px rgba(0,0,0,.5);
+    box-shadow: inset 0 0 100px rgba(0,0,0,.5);
+}
+.site-wrapper-inner {
+    display: table-cell;
+    vertical-align: top;
+}
+.cover-container {
+    margin-right: auto;
+    margin-left: auto;
+}
+
+/* Padding for spacing */
+.inner {
+    padding: 30px;
+}
+
+
+/*
+ * Header
+ */
+.masthead-brand {
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.masthead-nav > li {
+    display: inline-block;
+}
+.masthead-nav > li + li {
+    margin-left: 20px;
+}
+.masthead-nav > li > a {
+    padding-right: 0;
+    padding-left: 0;
+    font-size: 16px;
+    font-weight: bold;
+    color: #fff; /* IE8 proofing */
+    color: rgba(255,255,255,.75);
+    border-bottom: 2px solid transparent;
+}
+.masthead-nav > li > a:hover,
+.masthead-nav > li > a:focus {
+    background-color: transparent;
+    border-bottom-color: #a9a9a9;
+    border-bottom-color: rgba(255,255,255,.25);
+}
+.masthead-nav > .active > a,
+.masthead-nav > .active > a:hover,
+.masthead-nav > .active > a:focus {
+    color: #fff;
+    border-bottom-color: #fff;
+}
+
+@media (min-width: 768px) {
+    .masthead-brand {
+        float: left;
+    }
+    .masthead-nav {
+        float: right;
+    }
+}
+
+
+/*
+ * Cover
+ */
+
+.cover {
+    padding: 0 20px;
+}
+.cover .btn-lg {
+    padding: 10px 20px;
+    font-weight: bold;
+}
+
+
+/*
+ * Footer
+ */
+
+.mastfoot {
+    color: #999; /* IE8 proofing */
+    color: rgba(255,255,255,.5);
+}
+
+
+/*
+ * Affix and center
+ */
+
+@media (min-width: 768px) {
+    /* Pull out the header and footer */
+    .masthead {
+        position: fixed;
+        top: 0;
+    }
+    .mastfoot {
+        position: fixed;
+        bottom: 0;
+    }
+    /* Start the vertical centering */
+    .site-wrapper-inner {
+        vertical-align: middle;
+    }
+    /* Handle the widths */
+    .masthead,
+    .mastfoot,
+    .cover-container {
+        width: 100%; /* Must be percentage or pixels for horizontal alignment */
+    }
+}
+
+@media (min-width: 992px) {
+    .masthead,
+    .mastfoot,
+    .cover-container {
+        width: 700px;
+    }
+}
+
+.wallpaper-thumb {
+    margin: 5px;
+}
+@charset "UTF-8";.blueimp-gallery .modal-body{position:relative;text-align:center;padding:0 0 56.25% 0;overflow:hidden;cursor:pointer}.blueimp-gallery .modal-footer{margin:0}.blueimp-gallery .modal-body .video-content a,.blueimp-gallery .modal-body .video-content iframe,.blueimp-gallery .modal-body .video-content video,.blueimp-gallery .modal-body img{max-width:100%;max-height:100%;margin:auto;position:absolute;top:0;right:0;bottom:0;left:0}.blueimp-gallery .modal-body .video-content video{display:none}.blueimp-gallery .modal-body .video-playing video{display:block}.blueimp-gallery .modal-body .video-content iframe{width:100%;height:100%;border:none;left:100%}.blueimp-gallery .modal-body .video-playing iframe{left:0}.blueimp-gallery .modal-body .video-playing a,.blueimp-gallery .modal-body .video-playing img{display:none}.blueimp-gallery .modal-body .video-content a{cursor:pointer}.blueimp-gallery .modal-body .video-content a:after{font-family:"Glyphicons Halflings";-webkit-font-smoothing:antialiased;content:"\e029";font-size:64px;line-height:64px;width:64px;height:64px;position:absolute;top:50%;margin:-32px 0 0 -32px}.blueimp-gallery .modal-body .video-loading a{background:url(../img/loading.gif) center no-repeat;background-size:64px 64px}.blueimp-gallery .modal-body .video-loading a:after{content:none}/*# sourceMappingURL=bootstrap-image-gallery.min.css.map */
+.blueimp-gallery > .description, .blueimp-gallery > .example {
+    position: absolute;
+    top: 30px;
+    left: 15px;
+    color: #fff;
+    display: none;
+}
+.blueimp-gallery-controls > .description, .blueimp-gallery-controls > .example {
+    display: block;
+}
